@@ -5,7 +5,7 @@ on:
       - "test-0"
 jobs:
   test_job:
-    run_on: ubuntu-latest
+    runs-on: ubuntu-latest
     name: Test Job
     steps:
       - name: checkout
