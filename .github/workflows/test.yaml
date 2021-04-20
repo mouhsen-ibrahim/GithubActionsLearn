@@ -1,0 +1,14 @@
+name: Test Workflow
+on:
+  push:
+    branches:
+      - "test-0"
+jobs:
+  test_job:
+    run_on: ubuntu-latest
+    name: Test Job
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Test Step
+        run: echo Testing, it was pushed to ${{ github.ref }}
