@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - "test-0"
+    paths:
+      - services/**
 jobs:
   test_job:
     runs-on: ubuntu-latest
