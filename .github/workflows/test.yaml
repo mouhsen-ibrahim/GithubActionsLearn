@@ -1,8 +1,6 @@
 name: Test Workflow
 on:
-  push:
-    branches:
-      - "test-0"
+  pull_request:
     paths:
       - services/**
 jobs:
